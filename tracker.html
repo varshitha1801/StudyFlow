@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker | StudyFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="tracker-page">
+    <header class="navbar">
+        <div class="logo">StudyFlow</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="planner.html">Planner</a>
+            <a href="tracker.html">Tracker</a>
+        </nav>
+    </header>
+    <main class="tracker-container">
+        <h2>Progress Tracker</h2>
+
+        <section class="card progress-overview">
+            <h3>Overall Progress</h3>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar" style="width: 0%;"></div>
+            </div>
+            <p><span id="progress-percent">0%</span> Completed</p>
+            <div class="progress-stats">
+                <p>Completed Tasks: <span id="completed-count">0</span></p>
+                <p>Pending Tasks: <span id="pending-count">0</span></p>
+            </div>
+        </section>
+        <section class="card stats-section">
+            <h3>Key Statistics</h3>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>Total Study Time</h4>
+                    <p id="total-hours">0 hours</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Current Study Streak</h4>
+                    <p id="study-streak">0 days</p>
+                </div>
+            </div>
+        </section>
+        <section class="card streak-visualization">
+            <h3>7-Day Study Streak</h3>
+            <div id="streak-grid" class="streak-grid-container">
+                </div>
+        </section>
+        <section class="card motivation-section">
+            <h3>Motivation Corner</h3>
+            <blockquote id="quote-text">Loading an inspiring quote...</blockquote>
+        </section>
+    </main>
+    <script src="tracker.js"></script>
+</body>
+<footer style="text-align:center; padding:15px;">
+  © 2026 StudyFlow | Academic Planner
+</footer>
+</html>
