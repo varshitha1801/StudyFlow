@@ -264,7 +264,7 @@ input:focus, select:focus {
 }
 
 .streak-visualization {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
 }
 
 /* Progress Bar */
